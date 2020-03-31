@@ -17,12 +17,6 @@ namespace Cap05
             NomeTitular = nomeTitular;
         }
 
-        public ContaBancaria(int numeroConta, string nomeTitular, double valorConta) : this(numeroConta, nomeTitular)
-        {
-            ValorConta = valorConta;
-
-        }
-        
         public void Deposito(double deposito)
         {
             ValorConta = ValorConta + deposito;
@@ -47,7 +41,7 @@ namespace Cap05
             }
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return "Conta " +
                 NumeroConta
